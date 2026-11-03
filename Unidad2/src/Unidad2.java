@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 import Utilidades.Matematicas;
 
-public class Prueba {
+public class Unidad2 {
     public static void main(String[] arg) throws Exception {
         //  System.out.println((1+2+3+1)/2);
         //  System.out.println((1+2+3+1)/3.0);
@@ -124,19 +124,62 @@ public class Prueba {
         // while(i<0);
 
 
-        //Clase 5
-        for (int i=1;i<=4;i++){
-            if(i%2==0){
-            for(int j=i;j<=4;j++){
-            System.out.print("*");
-            }
+        // //Clase 5
+        // for (int i=1;i<=4;i++){
+        //     if(i%2==0){
+        //     for(int j=i;j<=4;j++){
+        //     System.out.print("*");
+        //     }
 
-         System.out.println();
-        }
+        //  System.out.println();
+        // }
+
+        
+   
+    // int a = 254;
+    // System.out.println(funcion(a, 2));
+
+
+     // Ejemplo 1: Error de índice fuera de rango
+ int[] numeros = {10, 20, 30, 40, 50};
+ System.out.println("Elemento en posición 2: " + numeros[2]);
+ System.out.println("Elemento en posición 5: " + numeros[5]); // Error intencional
 
 
 
-    }
+ }
+
+ 
+//     public static int funcion(int num, int pos){
+//      if(num < 10){
+//     return num;
+//     }else{
+//     return (num % 10) * (int) Math.pow(10, pos) + (funcion(num/10, pos-1));
+//     }
+//  }
+
+//     //atender excepciones 
+//     try
+//     imprimirDivision();
+
+//    public void imprimirDivision{
+//     try{
+//         int resultado=dividir(numerador:10, denominador: 3);
+//         System.out.println(resultado);
+//     }catch(Exception e){
+//         System.out.println("Error1");
+//     }
+//    }
+
+//     public static int dividir (int numerador, int denominador) throws Exception{
+//             return numerador/denominador;
+//     }
+
+
+
+
+
 }
-}
 
+
+ 

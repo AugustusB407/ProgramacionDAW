@@ -4,6 +4,9 @@ import java.text.ListFormat.Style;
 import java.util.Scanner;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
+/**
+ * Actividades
+ */
 public class Actividades {
     public static void main(String[] args) {
     
@@ -233,101 +236,225 @@ public class Actividades {
     // else if(  )
 
 
-//     //Algoritmo MCD
-//     Scanner sc = new Scanner(System.in);
-//     System.out.println("Dime el a");
-//     int a=sc.nextInt();
-//     System.out.println("Dime el b");
-//     int b=sc.nextInt();
-//     int resto;
+// //     //Algoritmo MCD
+// //     Scanner sc = new Scanner(System.in);
+// //     System.out.println("Dime el num1");
+// //     int num1=sc.nextInt();
+// //     System.out.println("Dime el num2");
+// //     int num2=sc.nextInt();
+// //     int resto;
     
 
-//     // Introducimos a y b como valores absolutos
-//     a = Math.abs(a);
-//     b = Math.abs(b);
+// //     // Introducimos num1 y num2 como valores absolutos
+// //     num1 = Math.abs(num1);
+// //     num2 = Math.abs(num2);
 
-//    // Calculamos 
-//     while (b != 0){
-//         resto= a%b;
-// //         a=b;
-// //         b=resto;
+// //    // Calculamos 
+// //     while (num2 != 0){
+// //         resto= num1%num2;
+// // //         num1=num2;
+// // //         num2=resto;
 
-// //     }
-//         System.out.println("El MCD es: "+a);
+// // //     }
+// //         System.out.println("El MCD es: "+num1);
 
-    //  //Algoritmo MCM
-    // Scanner sc = new Scanner(System.in);
-    // System.out.println("Dime el a");
-    // int a=sc.nextInt();
-    // System.out.println("Dime el b");
-    // int b=sc.nextInt();  
-    // int mayor;
-    // int mcm;
+//     //  //Algoritmo MCM
+//     // Scanner sc = new Scanner(System.in);
+//     // System.out.println("Dime el a");
+//     // int a=sc.nextInt();
+//     // System.out.println("Dime el b");
+//     // int b=sc.nextInt();  
+//     // int mayor;
+//     // int mcm;
 
-    // //Calculamos las frormulas
-    // mayor=Math.max(a , b);
-    // mcm=mayor;
+//     // //Calculamos las frormulas
+//     // mayor=Math.max(a , b);
+//     // mcm=mayor;
 
-    // while ((mcm % a !=0) || (mcm % b !=0)) {
-    //     mcm = mcm + mayor;
-    // }
-//     // System.out.println("El mcm es: "+mcm);
+//     // while ((mcm % a !=0) || (mcm % b !=0)) {
+//     //     mcm = mcm + mayor;
+//     // }
+// //     // System.out.println("El mcm es: "+mcm);
 
-//     //Creacion de la tabla de mulptiplicar
+// //     //Creacion de la tabla de mulptiplicar
 
-//    for (int i=1;i<=10;i++){
-//             for(int j=1;j<=10;j++){
-//             System.out.println(i + " x " + j + " = " + (i*j));
-//             }
-//         }
-
-
-    imprimir("la suma de 3+5 es: ", sumar(3, 5));
-
-    System.out.println(maximo(maximo(2,3))5);
-
-    double radio=3;
-    double altura=5;
-calculareacilindro(radio, altura);
-
-    
-    }
+// //    for (int i=1;i<=10;i++){
+// //             for(int j=1;j<=10;j++){
+// //             System.out.println(i + " x " + j + " = " + (i*j));
+// //             }
+// //         }
 
 
+//     imprimir("la suma de 3+5 es: ", sumar(3, 5));
 
+//     System.out.println(maximo(maximo(2,3))5);
 
-    public static void imprimir(String cadena, int variable){
-        System.out.println("Imprime la variable "+variable);
-    }
-    public static int sumar(int a, int b){
-        return a+b;
-    }
+//     double radio=3;
+//     double altura=5;
+// calculareacilindro(radio, altura);
 
-    public static int suma(int a, int b, int c){
-        return a+b;
-    }
+    /**Crear las funciones esPar, esDivisible2y3 y un procedimiento
+    para imprimir los números pares divisibles por 2 y 3 que hay entre 1 y 20
+    */
 
-    public static double suma(double a , double b){
-        return a+b;
-    }
-    
-    public static int maximo(int valor1, int valor2){
-        int maximo;
-        if (valor1>=valor2){
-
-        }
-        return maximo;
-    }
-
-    public static void calculareacilindro(double radio, double altura){
-        double area=2*PI*(altura+radio);
-
-        System.out.println("El area deñ cilindro es: "+area);
-    }
-
-    public static void calcularvolumenCilindro(double)
-
+  //Assert y Exvepciones
+        int edad = -5;
+    assert edad >= 0 : "Edad incorrecta";
+    System.out.println("Fin");
 
 }
+
+
+
+
+    // public static void imprimir(String cadena, int variable){
+    //     System.out.println("Imprime la variable "+variable);
+    // }
+    // public static int sumar(int a, int b){
+    //     return a+b;
+    // }
+
+    // public static int suma(int a, int b, int c){
+    //     return a+b;
+    // }
+
+    // public static double suma(double a , double b){
+    //     return a+b;
+    // }
+    
+    // public static int maximo(int valor1, int valor2){
+    //     int maximo;
+    //     if (valor1>=valor2){
+
+    //     }
+    //     return maximo;
+    // }
+
+    // public static void calculareacilindro(double radio, double altura){
+    //     double area=2*PI*(altura+radio);
+
+    //     System.out.println("El area deñ cilindro es: "+area);
+    // }
+
+    // public static void calcularvolumenCilindro(double)
+
+    // public static void actividad1 (){}
+
+    // public static boolean esPar(int numero){
+    //     if (numero%2==0) return true;
+    //     else {return false;
+
+    //     }
+    // }
+
+    // public static boolean esDivisible2y3(int numero){
+    //     if (numero%2==0 && numero%3==0){
+    //         return true;
+    //     }
+    // else{
+    //     return false;
+    // }
+    // }
+
+    // public static void imprimirNumeros (int inicio, int fin){
+    //     for (int i=inicio; i<=fin; i++){
+    //         if(esPar(i) && esDivisible2y3(i)){
+    //             System.out.print(i+", ");
+    //         }
+    //     }
+    // }
+
+// public static void actividad1(){ 
+//      Generae dos numeros de manera aleatorio
+//       int min=1, max=10;
+//       int aleatorio1=(int)(Math.random()*(max-min+1))+min;
+//       int aleatorio2=(int)(Math.random()*(max-min+1))+min;
+
+//       Double division=(aleatorio1/aleatorio2);
+//       Double media=(aleatorio1+aleatorio2)/2.0;
+
+//       //Realizar las operaciones 
+
+//       System.out.println("Los numeros generados son: "+aleatorio1+" t "+ aleatorio2);
+//       System.out.println("La division es: "+division);
+//       System.out.println("La media es; "+media);
+//       System.out.println("La potencia vale: "+Math.pow(aleatorio1,aleatorio2));
+//       System.out.println("Las raices cuadrados son: "+Math.pow(aleatorio1)+;
+
+
+// }
+// public static void actividad2(){}
+// public static void actividad3(){}
+// public static void actividad4(){}
+// public static void actividad5(){}
+// public static void actividad6(){}
+// public static void actividad7(){}
+
+// // Caso base: el factorial de 0 es 1
+// public static long calcularFacrotial(int n ){
+//     if (n==0){
+//         return 1;
+//     }else{
+//         // Paso recursivo: n * factorial(n-1)
+
+//         return n * calcularFacrotial(n-1);
+//     }
+// }
+
+
+//Digtos numero
+
+
+
+
+
+
+
+
+
+//  //Ejmplo sumaN
+
+//  public static int sumaN (int N){
+    // Enfoque iterativo
+// //     int suma =0;
+// //     for (int i=0;1<=N; i++);
+// //     suma=suma+1;
+
+// //     }
+// //     return suma;
+
+//     // Enfoque recursivo
+//     // Caso base
+//     if (N==1){
+//         return 1;
+//     }
+//     else {
+//         return N+sumaN(N-1);
+
+//     }
+// }
+
+
+// public static int potencia(int a, int b){
+// //Enfoque iterativo a*b Ej: 
+// int potencia=1;
+// for (int i=1;i<=b;i++){
+//     potencia=potencia*a;
+// }
+// return potencia;
+// // Caso base
+// if (b==1){
+//     return a;
+// }
+// else {
+
+// }
+// }
+
+  
+}
+
+
+
 
 
