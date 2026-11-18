@@ -1,13 +1,19 @@
-/*1. Crea una clase llamada País que tenga los parámetros (nombre, población, PIB), con los
-constructores, los correspondientes getter y setters y un método que devuelva el PIB per cápita,
-calculado como el PIB*100000 dividido por la población. En main haz uso de estas funciones.*/
 
 public class Pais {
+
+    /*1. Crea una clase llamada País que tenga los parámetros (nombre, población, PIB), con los
+        constructores, los correspondientes getter y setters y un método que devuelva el PIB per cápita,
+        calculado como el PIB*100000 dividido por la población. En main haz uso de estas funciones.*/
+
 
         //Atributos
         private String nombre;
         private double poblacion;
         private double PIB;
+
+        //Constructor vacío
+        public Pais() {
+        }
 
         //Constructor con parámetros
         public Pais(String nombre, double poblacion, double PIB) {
@@ -16,7 +22,7 @@ public class Pais {
             this.PIB = PIB;
         }
 
-        //Getters y Setters
+        //Getters
         public String getNombre() {
             return nombre;
         }
@@ -29,20 +35,24 @@ public class Pais {
             return poblacion;
         }
 
+        //Setters
         public void setPoblacion(double poblacion) {
             this.poblacion = poblacion;
-        }
-        public double getPIB() {
-            return PIB;
-        }
-
-        public void setPIB(double PIB) {
-            this.PIB = PIB;
         }
 
         //Método para calcular el PIB per cápita
         public double calcularPIBPerCapita() {
             return (PIB * 100000) / poblacion;
+        }
+
+        public String getPIB() {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'getPIB'");
+        }
+
+        public void setPIB(int i) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'setPIB'");
         }
     
 
@@ -69,5 +79,6 @@ public class Pais {
         System.out.println("PIB: " + pais1.getPIB());
         System.out.println("Nuevo PIB per cápita: " + pais1.calcularPIBPerCapita());
     }   
-    }    
+    }
+
 
