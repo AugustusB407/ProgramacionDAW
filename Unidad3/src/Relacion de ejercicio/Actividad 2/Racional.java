@@ -27,32 +27,41 @@ public void imprimirRacional() {
 public Racional suma(Racional b) {
     Racional r = new Racional();
     r.asignaNumerador(this.numerador * b.denominador + b.numerador * this.denominador);
-    r.asignaDenominador(this.numerador * b.denominador);
+    r.asignaDenominador(this.denominador * b.denominador);
     return r;
 
 }
 
 public Racional resta(Racional b) {
+    Racional r = new Racional();
     r.asignaNumerador(this.numerador * b.denominador - b.numerador * this.denominador);
-    r.asignaDenominador(this.numerador * b.denominador);
+    r.asignaDenominador(this.denominador * b.denominador);
     return r;
 }
 
 public Racional producto(Racional b) {
-    // igual, con la fórmula del producto
+    Racional r = new Racional();
+    r.asignaNumerador(this.numerador * b.numerador);
+    r.asignaDenominador(this.denominador * b.denominador);
+    return r;
+
 }
 
 public Racional division(Racional b) {
-    // igual, con la fórmula de la división
+    Racional r = new Racional();
+    r.asignaNumerador(this.numerador * b.denominador);
+    r.asignaDenominador(this.denominador * b.numerador);
+    return r;
 }
 
 // 5. Comparación
 public boolean esIgual(Racional b) {
-    // multiplicación cruzada, devolver true/false
+    return ((this.numerador * b.denominador) == (b.numerador * this.denominador));
 }
 
 // 6. main (aquí, o en una clase Main aparte)
 public static void main(String[] args) {
+    
     // crear racionales, asignar valores, imprimir,
     // probar las cuatro operaciones y esIgual
 }
