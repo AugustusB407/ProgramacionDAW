@@ -89,5 +89,11 @@ public static void main(String[] args) {
     Racional division = x.division(y);
     System.out.print("x / y = ");
     division.imprimirRacional();
+
+    if (x.esIgual(y)) {
+    System.out.println("Son iguales");
+} else {
+    System.out.println("No son iguales");
+}
 }
 }
