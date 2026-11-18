@@ -1,10 +1,8 @@
+/*1. Crea una clase llamada País que tenga los parámetros (nombre, población, PIB), con los
+constructores, los correspondientes getter y setters y un método que devuelva el PIB per cápita,
+calculado como el PIB*100000 dividido por la población. En main haz uso de estas funciones.*/
 
 public class Pais {
-
-    /*1. Crea una clase llamada País que tenga los parámetros (nombre, población, PIB), con los
-        constructores, los correspondientes getter y setters y un método que devuelva el PIB per cápita,
-        calculado como el PIB*100000 dividido por la población. En main haz uso de estas funciones.*/
-
 
         //Atributos
         private String nombre;
