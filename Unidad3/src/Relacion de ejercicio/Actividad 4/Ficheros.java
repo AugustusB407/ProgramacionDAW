@@ -8,5 +8,7 @@ una ruta de destino D:\, el resultado sera un fichero llamado A_B.txt en la ruta
 DEF». */
 
 public class Ficheros {
-    
+    public static void main(String[] args) {
+        
+    }
 }
