@@ -44,22 +44,22 @@ public class fichero {
 
 
 
-// String ruta = "C:\\Users\\usuario\\Desktop\\ProgramaciónDAW\\victoria.txt";
-// class FileIO{
-// public static void main(String [] args)
-//     throws FileNotFoundException, IOException{
-//         FileInputStream in = new FileInputStream("./images.jpg");
-//         FileOutputStream out = new FileOutputStream("./salida.jpg");
-//         int n=0,c;
-//         System.out.print ("\nCopiando ...");
-//     while( (c = in.read()) != -1){
-//         out.write(c);
-//         n++;
-//     }
-//         in.close();
-//         out.close();
-//         System.out.print ("\nSe han copiado "+n+" Bytes\n");
-//     }}
+String ruta = "C:\\Users\\usuario\\Desktop\\ProgramaciónDAW\\victoria.txt";
+class FileIO{
+public static void main(String [] args)
+    throws FileNotFoundException, IOException{
+        FileInputStream in = new FileInputStream("./images.jpg");
+        FileOutputStream out = new FileOutputStream("./salida.jpg");
+        int n=0,c;
+        System.out.print ("\nCopiando ...");
+    while( (c = in.read()) != -1){
+        out.write(c);
+        n++;
+    }
+        in.close();
+        out.close();
+        System.out.print ("\nSe han copiado "+n+" Bytes\n");
+    }}
 
 // public void leerDatos(String ruta) {
 // int partidasJugador1=0,partidasJugador2=0,partidasJugador3=0;

@@ -4,96 +4,119 @@ numerador y b el denominador (distinto de cero). Se deben implementar los siguie
 la clase Racional: asignaNumerador(int x), asignaDenominador(int y), imprimirRacional(),
 las operaciones de suma, resta, producto y división y esIgual(Racional b). En main haz uso de ellas */
 
+
 public class Racional {
 
-//Atributos
-private int numerador;
-private int denominador;
+    // Atributos
+    private int numerador;
+    private int denominador;
 
-//Métodos de asignación
-public void asignaNumerador(int x) {
-    this.numerador = x;
-}
-
-public void asignaDenominador(int y) {
-    if (y != 0){
-        this.denominador = y;
-    }else {
-        System.out.println("Error");
+    // Asignar numerador
+    public void asignaNumerador(int x) {
+        numerador = x;
     }
-}
 
-//Mostrar por pantalla
-public void imprimirRacional() {
-    //imprimir numerador/denominador
-    System.out.println(numerador+ "/" +denominador);
-}
+    // Asignar denominador
+    public void asignaDenominador(int y) {
+        if (y != 0) {
+            denominador = y;
+        } else {
+            System.out.println("Error: denominador cero");
+        }
+    }
 
-//Operaciones (devuelven un Racional nuevo)
-public Racional suma(Racional b) {
-    Racional r = new Racional();
-    r.asignaNumerador(this.numerador * b.denominador + b.numerador * this.denominador);
-    r.asignaDenominador(this.denominador * b.denominador);
-    return r;
+    // Imprimir racional
+    public void imprimirRacional() {
+        System.out.println(numerador + "/" + denominador);
+    }
 
-}
+    // Suma
+    public Racional suma(Racional b) {
+        Racional r = new Racional();
 
-public Racional resta(Racional b) {
-    Racional r = new Racional();
-    r.asignaNumerador(this.numerador * b.denominador - b.numerador * this.denominador);
-    r.asignaDenominador(this.denominador * b.denominador);
-    return r;
-}
+        r.asignaNumerador(numerador * b.denominador + b.numerador * denominador);
 
-public Racional producto(Racional b) {
-    Racional r = new Racional();
-    r.asignaNumerador(this.numerador * b.numerador);
-    r.asignaDenominador(this.denominador * b.denominador);
-    return r;
+        r.asignaDenominador(denominador * b.denominador);
+        return r;
+    }
 
-}
+    // Resta
+    public Racional resta(Racional b) {
+        Racional r = new Racional();
 
-public Racional division(Racional b) {
-    Racional r = new Racional();
-    r.asignaNumerador(this.numerador * b.denominador);
-    r.asignaDenominador(this.denominador * b.numerador);
-    return r;
-}
+        r.asignaNumerador(numerador * b.denominador - b.numerador * denominador);
 
-//Comparación
-public boolean esIgual(Racional b) {
-    return ((this.numerador * b.denominador) == (b.numerador * this.denominador));
-}
+        r.asignaDenominador(denominador * b.denominador);
+        return r;
+    }
 
-//main (aquí, o en una clase Main aparte)
-public static void main(String[] args) {
-    Racional x = new Racional();
-    Racional y = new Racional();
-    x.asignaNumerador(1);
-    x.asignaDenominador(2);
-    y.asignaNumerador(3);
-    y.asignaDenominador(4);
-    
-    Racional suma = x.suma(y);
-    System.out.print("x + y = ");
-    suma.imprimirRacional();
+    // Producto
+    public Racional producto(Racional b) {
+        Racional r = new Racional();
 
-    Racional resta = x.resta(y);
-    System.out.print("x - y = ");
-    resta.imprimirRacional();
+        r.asignaNumerador(numerador * b.numerador);
+        r.asignaDenominador(denominador * b.denominador);
+        return r;
+    }
 
-    Racional producto = x.producto(y);
-    System.out.print("x * y = ");
-    producto.imprimirRacional();
+    // División
+    public Racional division(Racional b) {
+        if (b.numerador == 0) {
+            System.out.println("No se puede dividir entre cero");
+            return null;
+        }
 
-    Racional division = x.division(y);
-    System.out.print("x / y = ");
-    division.imprimirRacional();
+        Racional r = new Racional();
 
-    if (x.esIgual(y)) {
-    System.out.println("Son iguales");
-} else {
-    System.out.println("No son iguales");
-}
-}
+        r.asignaNumerador(numerador * b.denominador);
+        r.asignaDenominador(denominador * b.numerador);
+        return r;
+    }
+
+    // Comparar racionales
+    public boolean esIgual(Racional b) {
+        return numerador * b.denominador == b.numerador * denominador;
+    }
+
+    // MAIN
+    public static void main(String[] args) {
+
+        Racional x = new Racional();
+        Racional y = new Racional();
+
+        x.asignaNumerador(1);
+        x.asignaDenominador(2);
+
+        y.asignaNumerador(3);
+        y.asignaDenominador(4);
+
+        System.out.print("X = ");
+        x.imprimirRacional();
+
+        System.out.print("Y = ");
+        y.imprimirRacional();
+
+        Racional resultado;
+
+        resultado = x.suma(y);
+        System.out.print("Suma = ");
+        resultado.imprimirRacional();
+
+        resultado = x.resta(y);
+        System.out.print("Resta = ");
+        resultado.imprimirRacional();
+
+        resultado = x.producto(y);
+        System.out.print("Producto = ");
+        resultado.imprimirRacional();
+
+        resultado = x.division(y);
+        System.out.print("Division = ");
+
+        if (resultado != null) {
+            resultado.imprimirRacional();
+        }
+
+        System.out.println("¿Son iguales? " + x.esIgual(y));
+    }
 }

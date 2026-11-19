@@ -7,7 +7,11 @@ una ruta de destino D:\, el resultado sera un fichero llamado A_B.txt en la ruta
 «ABC
 DEF». */
 
+String ruta = "C:\\Users\\usuario\\Desktop\\ProgramacionDAW\\Unidad3\\src\\Relacion de ejercicio\\Actividad 4";
+
 public class Ficheros {
+    
+
     public static void main(String[] args) {
         
     }
