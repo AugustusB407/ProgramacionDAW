@@ -23,7 +23,7 @@ public class Persona {
         this.nombre = nombre;
     }
     //Metodos
-     public int getEdad() {
+    public int getEdad() {
         return edad;
     }
 
@@ -31,14 +31,13 @@ public class Persona {
         this.edad = edad;
     }
 
-     public double getEstatura() {
+    public double getEstatura() {
         return estatura;
     }
 
     public void setEstatura(double estatura) {
         this.estatura = estatura;
     }
-   
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
@@ -56,7 +55,7 @@ public class Persona {
         System.out.print(" Hola a todos, soy " +nombre+ ", tengo: "+edad+ " anos y tengo una estatura de: "+estatura);
     }
 
-   
+
      //Main
 
     public static void main(String[] args) {

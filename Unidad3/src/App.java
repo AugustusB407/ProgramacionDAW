@@ -1,11 +1,14 @@
+package Unidad3.src;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class App {
-    public void leerDatos(String ruta) {
+    public void leerDatos(String ruta) {}
+    Scanner ruta = new Scanner();
     public static void main(String[] args) throws Exception {
-      int partidasJugador1=0,partidasJugador2=0;
+
+    int partidasJugador1=0,partidasJugador2=0;
     try {
         Scanner sc = new Scanner(new File(ruta)); //Puedes encontrar esta línea entre paréntesis en try por ser crítica
         while (sc.hasNextLine()) {
@@ -28,3 +31,4 @@ public class App {
     }
     }
 }
+

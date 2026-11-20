@@ -1,7 +1,11 @@
-package Unidad3.Actividades 1;
+package Unidad3.src.Actividadesdeclase.Actividad1;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 
 public class Persona3 {
-     //Datos miembro
+    //Datos miembro
     private String nombre;
     private String DNI;
     private LocalDate fechaNacimiento;
@@ -63,5 +67,11 @@ public class Persona3 {
     }
     public void setSoltero_casado(boolean soltero_casado) {
         this.soltero_casado = soltero_casado;
+    }
+    @Override
+    public String toString() {
+        return "Persona3 [nombre=" + nombre + ", DNI=" + DNI + ", fechaNacimiento=" + fechaNacimiento + ", direccion=" + direccion + ", genero=" + genero + ", soltero_casado=" + soltero_casado + "]";
     }    
+    
+    
 }

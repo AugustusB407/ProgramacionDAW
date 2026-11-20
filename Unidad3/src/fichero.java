@@ -45,21 +45,21 @@ public class fichero {
 
 
 String ruta = "C:\\Users\\usuario\\Desktop\\ProgramaciónDAW\\victoria.txt";
-class FileIO{
-public static void main(String [] args)
-    throws FileNotFoundException, IOException{
-        FileInputStream in = new FileInputStream("./images.jpg");
-        FileOutputStream out = new FileOutputStream("./salida.jpg");
-        int n=0,c;
-        System.out.print ("\nCopiando ...");
-    while( (c = in.read()) != -1){
-        out.write(c);
-        n++;
-    }
-        in.close();
-        out.close();
-        System.out.print ("\nSe han copiado "+n+" Bytes\n");
-    }}
+// class FileIO{
+// public static void main(String [] args)
+    // throws FileNotFoundException, IOException{
+    //     FileInputStream in = new FileInputStream("./images.jpg");
+    //     FileOutputStream out = new FileOutputStream("./salida.jpg");
+    //     int n=0,c;
+    //     System.out.print ("\nCopiando ...");
+    // while( (c = in.read()) != -1){
+    //     out.write(c);
+    //     n++;
+    // }
+    //     in.close();
+    //     out.close();
+    //     System.out.print ("\nSe han copiado "+n+" Bytes\n");
+    // }}
 
 // public void leerDatos(String ruta) {
 // int partidasJugador1=0,partidasJugador2=0,partidasJugador3=0;
@@ -104,24 +104,24 @@ public static void main(String [] args)
 
 
 
-        // try{
-        //     //tengo un archivo para leer
-        //     Scanner ficheroLeer = new Scanner("./FicheroLeer.txt");
+        try{
+            //tengo un archivo para leer
+            Scanner ficheroLeer = new Scanner("./FicheroLeer.txt");
 
-        //     //Tengo un archivo para escribir
-        //     PrintWriter ficheroEscribir = new PrintWriter("./FicheroEscribir.txt");
+            //Tengo un archivo para escribir
+            PrintWriter ficheroEscribir = new PrintWriter("./FicheroEscribir.txt");
 
-        //     while (ficheroLeer.hasNextLine()){
-        //         String linea = ficheroLeer.nextLine();
-        //         ficheroEscribir.println(linea);
-        //     }
-        //     ficheroLeer.close();
-        //     ficheroEscribir.close();
+            while (ficheroLeer.hasNextLine()){
+                String linea = ficheroLeer.nextLine();
+                ficheroEscribir.println(linea);
+            }
+            ficheroLeer.close();
+            ficheroEscribir.close();
 
-        // }
-        // catch(Exception e){
-        //     System.out.println(e.getMessage());
-        // }
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
         
         // try{
         //     Scanner leer = new Scanner(new File("./FicheroEjemplo.txt"));

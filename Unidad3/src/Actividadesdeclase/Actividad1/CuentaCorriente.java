@@ -1,16 +1,22 @@
-package Unidad3.Actividades 1;
+package Unidad3.src.Actividadesdeclase.Actividad1;
 
 public class CuentaCorriente {
-     //Datos miembro
+    //Datos miembro
     private String numeroCuenta;
     private double saldo;
     private Persona3 cliente;
 
     //Constructores
-    public CuentaCorriente(){}
+    public CuentaCorriente(){    }
     public CuentaCorriente(String numeroCuenta,double saldo){
         this.numeroCuenta=numeroCuenta;
         this.saldo=saldo;
+    }
+
+    public CuentaCorriente(String numeroCUenta,double saldo, Persona3 persona){
+        this.numeroCuenta=numeroCUenta;
+        this.saldo=saldo;
+        this.cliente=persona;
     }
     public CuentaCorriente(CuentaCorriente copia){
         this.numeroCuenta=copia.getNumeroCuenta();
@@ -35,6 +41,19 @@ public class CuentaCorriente {
     }
     public void setCliente(Persona3 cliente) {
         this.cliente = cliente;
+    }   
+    public void imprimeCuenta(){
+        System.out.println("El número de cuenta es: "+this.numeroCuenta);
+        if(cliente!=null){
+            System.out.println(cliente.getNombre());
+            System.out.println("Mi dirección es: "+cliente.getDireccion());
+        }
+
+
+    }
+    @Override
+    public String toString() {
+        return "CuentaCorriente [numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + ", cliente=" + cliente + "]";
     }   
     
 }
