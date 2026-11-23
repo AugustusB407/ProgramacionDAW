@@ -6,8 +6,7 @@ public class CuentaCorriente {
     private double saldo;
     private Persona3 cliente;
 
-    //Constructores
-    public CuentaCorriente(){    }
+    //Constructors
     public CuentaCorriente(String numeroCuenta,double saldo){
         this.numeroCuenta=numeroCuenta;
         this.saldo=saldo;

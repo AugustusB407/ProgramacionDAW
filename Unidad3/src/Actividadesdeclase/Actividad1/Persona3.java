@@ -14,7 +14,6 @@ public class Persona3 {
     private boolean soltero_casado;
 
     //Constructores
-    public Persona3(){}
     public Persona3(String nombre, String fecha,String direccion, char genero,boolean estado){
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         this.fechaNacimiento=LocalDate.parse(fecha,fmt); 
@@ -22,13 +21,6 @@ public class Persona3 {
         this.direccion=direccion;
         this.genero=genero;
         this.soltero_casado=estado;
-    }
-    public Persona3(Persona3 objeto){
-        this.nombre=objeto.getNombre();
-        this.DNI=objeto.getDNI();
-        this.direccion=objeto.getDNI();
-        this.genero=objeto.getGenero();
-        this.soltero_casado=objeto.getSoltero_casado();
     }
 
     //Métodos
