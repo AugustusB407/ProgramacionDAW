@@ -382,13 +382,13 @@ public class Actividades {
 //       System.out.println("Las raices cuadrados son: "+Math.pow(aleatorio1)+;
 
 
-// }
-// public static void actividad2(){}
-// public static void actividad3(){}
-// public static void actividad4(){}
-// public static void actividad5(){}
-// public static void actividad6(){}
-// public static void actividad7(){}
+}
+public static void actividad2(){}
+public static void actividad3(){}
+public static void actividad4(){}
+public static void actividad5(){}
+public static void actividad6(){}
+public static void actividad7(){}
 
 // // Caso base: el factorial de 0 es 1
 // public static long calcularFacrotial(int n ){

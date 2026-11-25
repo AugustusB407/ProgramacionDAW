@@ -451,39 +451,3 @@ public class Unidad2Fundamentosdelaprogramación {
             // Se usa para quitar el ultimo digito y coger el siguente
             n = n / 10;
         }
-
-        //El resultado de si es par o impar
-        System.out.println("Digitos pares: " + pares);
-        System.out.println("Digitos impares: " + impares);
-    }
-
-
-    public static void main(String[] args) {
-    System.out.println("¿Es veradero o falso?: ");
-    boolean valor;
-    if (valor = true) {
-        // Tablero de 4 en raya
-        System.out.println("|   |   |   |   |   |   |   |");
-        System.out.println("|   |   |   |   |   |   |   |");
-        System.out.println("|   |   |   | X |   |   |   |");
-        System.out.println("|   |   | O | X |   |   |   |");
-        System.out.println("|   | X | O | O |   |   |   |");
-        System.out.println("| X | O | X | O | X |   |   |");
-        System.out.println("-----------------------------");
-        System.out.println("  0   1   2   3   4   5   6  ");
-    } else {
-        valor = false;
-        // Tablero de 3 en raya
-        System.out.println("| X | O | X |");
-        System.out.println("-------------");
-        System.out.println("|   | O |   |");
-        System.out.println("-------------");
-        System.out.println("|   | X |   |");
-        System.out.println("-------------");
-        System.out.println("  0   1   2  ");
-    }
-        
-
-
-}
-}
